@@ -49,4 +49,46 @@ Opportunities랑 DIAGNOSTICS는 가이드 제시 (근데 오퍼튜니티는 왜 
 
 
 
+### :book: 1-6) 느린 자바스크립트 어떻게 최적화? Performance 탭
+
+일단 Opportunities 남은것들:
+
+**Minify JavaScript**
+: 공백, 주석 제거(CRA 하면 알아서 해줌)
+
+**Preconnect to required origins**
+: 미리 리소스 주소 프리커넥트해라 (다른 강의에서 나올거임)
+
+이제 Diagnostics 보자
+
+**Minimize main-thread work** : 메인 스레드 작업을 좀 줄여라. 어떤 작업에서 오래 걸렸나 나옴
+
+**Serve static assets with an effcient cache policy** : 캐시 안되어있는거 캐시해라
+
+**Reduce JavaSciprt execution time**
+: 어디서 얼마나 걸렸나 보여줌. (아래 chrome 어쩌구는 우리 서비스와 관련 없는 크롬 확장프로그램 문제임. 여긴 패스하자)
+
+⇒ 문제점들은 알았지만 구체적으로 어떤 코드에서 문제인지는 모름
+⇒ 그래서 필요한게 Performance 탭
+
+
+### Performance 탭
+
+페이지가 로드되면서 실행되는 작업들을 타임라인과 차트 형태로 보여줌
+사용법: 왼쪽 위 새로고침 아이콘 누르면 분석됨
+맨 위는 타임라인 - 드래그로 일부 선택, 더블클릭으로 전체 선택
+
+[구체적 그래프 살펴보기]
+- Timings에 파랑, 초록 버튼?들 부분에 **FP(First Paint)시점**부터 페이지가 그려짐
+- 프레임 차트의 Network 쪽 보면 api 통신 볼 수 있음
+
+
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/50893303/197130551-cb022c41-afbb-4a5f-a6d3-3c1e283e0e4f.png">
+
+
+예시화면에서 Article 은 하나의 작업인데 너무 많은 리소스를 사용하다보니 가비지컬렉터에 의해 중간중간 끊긴것.
+이미지 보면 Minor GC 가 보임. 메모리의 여유가 없어서 정리해주는 작업.
+
+![image](https://user-images.githubusercontent.com/50893303/197130984-8d363aa0-a310-4121-83dc-81e65563fc63.png)
+
 
