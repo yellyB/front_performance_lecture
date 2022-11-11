@@ -16,6 +16,9 @@
 
 렌더링 성능: 불러온 파일 웹에 그려주기
 
+<br/>
+<br/>
+
 # 📖 참고) Performance 탭
 
 ![image](https://user-images.githubusercontent.com/50893303/201566739-3d2c4210-1611-4671-b3f4-bf4cebe691f7.png)
@@ -82,6 +85,7 @@ Call Tree: 바텀업과는 반대로 실행된 정상적인 순서대로 보여�
 
 해당 옵션 선택하고 성능 측정 돌리고 프레임에 영역 하나 클릭하면 Layers 볼 수 있음  
  : 브라우저가 여러개의 레이어 만들고 컴포짓(합침)하는데 그 레이어가 어떻게 구성되어 있는지 보여줌
+
 <br/>
 
 ![image](https://user-images.githubusercontent.com/50893303/201565388-cce672a4-2cc1-4a0f-a980-f05ed054a07a.png)
