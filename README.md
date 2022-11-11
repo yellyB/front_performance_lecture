@@ -1,11 +1,8 @@
-# front_performance_lecture
-
-강의 내용 메모: 프론트엔드 개발자를 위한, 실전 웹 성능 최적화(feat. React) - Part. 1
+# 프론트엔드 개발자를 위한, 실전 웹 성능 최적화(feat. React) - Part. 1
 
 <img src="https://user-images.githubusercontent.com/50893303/201569277-fee7eac7-edea-4758-8bc4-6ca9685b1ee9.png" width="700"/>
 <br/>
-<br/>
-<br/>
+
 ---
 
 ## 배울것들
